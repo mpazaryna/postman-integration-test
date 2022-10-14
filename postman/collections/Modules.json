@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "4daccf70-038e-4527-9c26-80e91d766fad",
+		"name": "Modules",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "604-4daccf70-038e-4527-9c26-80e91d766fad"
+	},
+	"item": [
+		{
+			"name": "Mobile Buyer Choice",
+			"id": "25ad43b6-7196-4e81-baab-d8b8eb21565d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"doType\": [\n        \"FHA\"\n    ],\n    \"state\": \"fl\",\n    \"county_select\": \"5\",\n    \"zip\":\"21401\",\n    \"use_ratios\": \"y\",\n    \"t_cash\": \"125000\",\n    \"q_income\": \"175,000\",\n    \"m_debts\": \"4,000\",\n    \"sp\": \"200,000\",\n    \"prop_t\": \"0\",\n    \"int_rate\": \"3\",\n    \"s_cred\": \"5\",\n    \"input_dol_cred\": \"12,000\",\n    \"filing_status\": \"m\",\n    \"report_summary\": \"n\",\n    \"display_ccost\": \"y\",\n    \"display_pdf_output\": \"y\",\n    \"inputcred\": \"800\",\n    \"input_ma\": \"79,000\",\n    \"lim_piti\": \"80.1\",\n    \"input_ltv\": \"80.1\",\n    \"ftbuyer\": \"n\",\n    \"term\": \"30\",\n    \"va_fee_ex\": \"n\",\n    \"cust_email\": \"mpazbot@gmail.com\",\n    \"cust_name\": \"Filly J Bobasone\",\n    \"cust_phone\": \"202-999-9090\",\n    \"close_date\": \"2021/10/01\",\n    \"input_pmi$\": \"y\",\n    \"lend_cred\": \"0\",\n    \"condo\":\"222\",\n    \"input_ins\": \"960\",\n    \"buyd21\": \"y\",\n    \"interest_rates\": {\n        \"conv_15\": \"4.60\",\n        \"conv_30\": \"5.29\",\n        \"fha_15\": \"4.60\",\n        \"fha_30\": \"5.28\",\n        \"usda_15\": \"4.60\",\n        \"usda_30\": \"5.28\",\n        \"va_15\": \"4.60\",\n        \"va_30\": \"5.28\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{url}}/engine/mobile/buyer-choice",
+					"protocol": "https",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"engine",
+						"mobile",
+						"buyer-choice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mobile Buyer Prequal",
+			"id": "0d710aec-df42-42e1-a701-5cb2fa662d23",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"doType\": [\n        \"FHA\"\n    ],\n    \"state\": \"fl\",\n    \"county_select\": \"5\",\n    \"zip\":\"21401\",\n    \"use_ratios\": \"y\",\n    \"t_cash\": \"125000\",\n    \"q_income\": \"175,000\",\n    \"m_debts\": \"4,000\",\n    \"sp\": \"200,000\",\n    \"prop_t\": \"0\",\n    \"int_rate\": \"3\",\n    \"s_cred\": \"5\",\n    \"input_dol_cred\": \"12,000\",\n    \"filing_status\": \"m\",\n    \"report_summary\": \"n\",\n    \"display_ccost\": \"y\",\n    \"display_pdf_output\": \"y\",\n    \"inputcred\": \"800\",\n    \"input_ma\": \"79,000\",\n    \"lim_piti\": \"80.1\",\n    \"input_ltv\": \"80.1\",\n    \"ftbuyer\": \"n\",\n    \"term\": \"30\",\n    \"va_fee_ex\": \"n\",\n    \"cust_email\": \"mpazbot@gmail.com\",\n    \"cust_name\": \"Filly J Bobasone\",\n    \"cust_phone\": \"202-999-9090\",\n    \"close_date\": \"2021/10/01\",\n    \"input_pmi$\": \"y\",\n    \"lend_cred\": \"0\",\n    \"condo\":\"222\",\n    \"input_ins\": \"960\",\n    \"buyd21\": \"y\",\n    \"interest_rates\": {\n        \"conv_15\": \"4.60\",\n        \"conv_30\": \"5.29\",\n        \"fha_15\": \"4.60\",\n        \"fha_30\": \"5.28\",\n        \"usda_15\": \"4.60\",\n        \"usda_30\": \"5.28\",\n        \"va_15\": \"4.60\",\n        \"va_30\": \"5.28\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{url}}/engine/mobile/buyer-choice",
+					"protocol": "https",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"engine",
+						"mobile",
+						"buyer-choice"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
